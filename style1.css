@@ -1,0 +1,126 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0px; 
+}
+body{
+    background-color: #ffffff;
+
+    font-family: 'Courier New', Courier, monospace;
+}
+table {
+    border: 1px solid black;
+    
+    }
+    tr th{
+        border: 1px solid black; 
+    }
+    
+    tr td{
+        border: 1px solid black;   
+    }
+@media(min-width:200px)
+{
+
+    
+
+header>img{
+    width: 0%;
+ height: 30%;
+ }
+
+
+
+nav {
+    list-style: none; 
+    text-decoration: none;
+    display: block;
+    padding: 20px;
+    text-align: center;
+    border-right: 1px solid #f4f4f4;
+    background-color:#74DBA9 ;
+}
+
+
+header{
+    background-color: #7497f2;
+ }
+footer{
+    list-style: none;    
+}
+a:link, a:visited, a:hover, a:active{
+    text-decoration: none;
+    color:black;
+}
+}
+
+@media(min-width:1025px){
+.class{
+  display: grid;
+  grid-template-columns:1fr 1fr 1fr 1fr ;
+  grid-template-rows: 1fr 1fr 1fr 1fr ;
+  gap: 0px, 0px;
+  grid-template-areas: 
+
+  ". nazwa nazwa  . "
+  "peppe peppe . photo "
+  ".tytul tytul."
+  ".tabela tabela."
+  
+  
+  
+  
+  
+  
+  ;  
+}
+.nazwa{
+    font-size: 100px;
+    grid-area: nazwa;
+}
+.tytul{
+    grid-area: tytul;
+    font-size: 160px;
+    text-align: center; 
+}
+header{
+   background-color: #7497f2;
+}
+header>img{
+   width: 1900px;
+height: 980px;
+}
+
+.p{
+    /* text-align: center; */
+    font-size: 40px; 
+    grid-area: peppe; 
+}
+
+nav {
+    list-style: none; 
+    text-decoration: none;
+    display: block;
+    padding: 20px;
+    text-align: center;
+    border-right: 1px solid #f4f4f4;
+    background-color:#74DBA9 ;
+}
+
+a:link, a:visited, a:hover, a:active{
+    text-decoration: none;
+    color:black;
+}
+
+}
+table {
+border: 1px solid black;
+grid-area: tabela;
+clear: both;
+}
+tr th{
+    border: 1px solid black; 
+}
+
+tr td{
+    border: 1px solid black;   
+}
